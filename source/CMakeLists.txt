@@ -1,2 +1,2 @@
-add_subdirectory(3rd_party)
+add_subdirectory(3rd_party EXCLUDE_FROM_ALL)
 add_subdirectory(matplot)

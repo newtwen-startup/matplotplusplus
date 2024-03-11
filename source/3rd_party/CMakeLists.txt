@@ -25,7 +25,7 @@ else()
           CXX_VISIBILITY_PRESET "hidden")
   target_include_directories(nodesoup
           PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/nodesoup/include>)
-  target_compile_features(nodesoup PUBLIC cxx_std_17)
+  target_compile_features(nodesoup PRIVATE cxx_std_20)
 
   # Hackfix to support MSVC standard library
   # https://docs.microsoft.com/en-us/cpp/c-runtime-library/math-constants?view=vs-2019
